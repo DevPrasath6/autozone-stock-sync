@@ -1,23 +1,17 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import HeroSection from '@/components/HeroSection';
 import ProductsGrid from '@/components/ProductsGrid';
-import InventoryShowcase from '@/components/InventoryShowcase';
-import LocationsSection from '@/components/LocationsSection';
 
-const Index = () => {
+const Products = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        <HeroSection />
         <ProductsGrid />
-        <InventoryShowcase />
-        <LocationsSection />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Products;

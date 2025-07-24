@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +52,12 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// AutoZone Custom Colors
+				automotive: {
+					red: 'hsl(var(--automotive-red))',
+					silver: 'hsl(var(--automotive-silver))',
+					dark: 'hsl(var(--automotive-dark))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
