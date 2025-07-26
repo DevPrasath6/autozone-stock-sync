@@ -56,13 +56,13 @@ const InventoryShowcase = () => {
                 alt="Inventory Management Dashboard" 
                 className="w-full h-auto rounded-lg"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-automotive-dark/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
             
             {/* Floating Stock Cards */}
-            <div className="absolute -right-4 top-4 space-y-2">
+            <div className="absolute -right-4 lg:-right-4 top-4 space-y-2 hidden lg:block">
               {stockData.slice(0, 2).map((item, index) => (
-                <Card key={index} className="w-64 shadow-lg bg-background/95 backdrop-blur-sm">
+                <Card key={index} className="w-60 shadow-xl bg-background/95 backdrop-blur-sm border border-border">
                   <CardContent className="p-4">
                     <div className="flex items-center justify-between">
                       <div>

@@ -247,18 +247,18 @@ const LiveInventoryDashboard = () => {
                     <p className="text-2xl font-bold text-yellow-600">{stats.lowStock + stats.critical}</p>
                     <p className="text-sm text-muted-foreground">Need Attention</p>
                   </div>
-                </div>
-                {stats.outOfStock > 0 && (
-                  <div className="mt-3 p-2 bg-red-50 rounded-md">
-                    <p className="text-sm text-red-600 font-medium">
-                      {stats.outOfStock} item(s) out of stock
-                    </p>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+                 </div>
+                 {stats.outOfStock > 0 && (
+                   <div className="mt-3 p-2 bg-red-50 dark:bg-red-900/20 rounded-md">
+                     <p className="text-sm text-red-600 dark:text-red-400 font-medium">
+                       {stats.outOfStock} item(s) out of stock
+                     </p>
+                   </div>
+                 )}
+               </CardContent>
+             </Card>
+           ))}
+         </div>
 
         {/* Inventory Items */}
         <div className="space-y-4">
