@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import ProductsGrid from '@/components/ProductsGrid';
 import InventoryShowcase from '@/components/InventoryShowcase';
+import LiveInventoryDashboard from '@/components/LiveInventoryDashboard';
 import LocationsSection from '@/components/LocationsSection';
 
 const Index = () => {
@@ -11,8 +12,9 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <ProductsGrid />
         <InventoryShowcase />
+        <LiveInventoryDashboard />
+        <ProductsGrid />
         <LocationsSection />
       </main>
       <Footer />
