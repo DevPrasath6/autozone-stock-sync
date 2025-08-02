@@ -53,6 +53,102 @@ const ProductsGrid = () => {
       stock: 'In Stock',
       rating: 4.8,
       featured: false
+    },
+    {
+      title: 'Performance Exhaust',
+      description: 'Cat-back exhaust systems & mufflers',
+      price: 'From $299',
+      stock: 'In Stock',
+      rating: 4.9,
+      featured: false
+    },
+    {
+      title: 'Cold Air Intakes',
+      description: 'High-flow air intake systems for better performance',
+      price: 'From $189',
+      stock: 'In Stock',
+      rating: 4.7,
+      featured: false
+    },
+    {
+      title: 'Suspension Kits',
+      description: 'Lowering springs and coilover systems',
+      price: 'From $449',
+      stock: 'In Stock',
+      rating: 4.8,
+      featured: false
+    },
+    {
+      title: 'Brake Pads & Rotors',
+      description: 'High-performance brake components',
+      price: 'From $85',
+      stock: 'In Stock',
+      rating: 4.9,
+      featured: false
+    },
+    {
+      title: 'Window Tinting',
+      description: 'Professional ceramic and carbon films',
+      price: 'From $199',
+      stock: 'Available',
+      rating: 4.8,
+      featured: false
+    },
+    {
+      title: 'Car Audio Systems',
+      description: 'Speakers, amplifiers, and subwoofers',
+      price: 'From $129',
+      stock: 'In Stock',
+      rating: 4.6,
+      featured: false
+    },
+    {
+      title: 'Roof Racks & Carriers',
+      description: 'Cargo boxes, bike racks, and ski carriers',
+      price: 'From $159',
+      stock: 'In Stock',
+      rating: 4.7,
+      featured: false
+    },
+    {
+      title: 'Performance Chips',
+      description: 'ECU tuning and performance modules',
+      price: 'From $249',
+      stock: 'In Stock',
+      rating: 4.5,
+      featured: false
+    },
+    {
+      title: 'All-Season Tires',
+      description: 'Premium tires for all weather conditions',
+      price: 'From $129',
+      stock: 'In Stock',
+      rating: 4.8,
+      featured: false
+    },
+    {
+      title: 'Wheel & Rim Sets',
+      description: 'Alloy and steel wheels in various sizes',
+      price: 'From $199',
+      stock: 'In Stock',
+      rating: 4.7,
+      featured: false
+    },
+    {
+      title: 'Car Security Systems',
+      description: 'Alarms, immobilizers, and GPS tracking',
+      price: 'From $149',
+      stock: 'In Stock',
+      rating: 4.6,
+      featured: false
+    },
+    {
+      title: 'Backup Cameras',
+      description: 'Wireless and wired reversing camera systems',
+      price: 'From $89',
+      stock: 'In Stock',
+      rating: 4.8,
+      featured: false
     }
   ];
 

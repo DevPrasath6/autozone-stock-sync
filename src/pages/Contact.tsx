@@ -252,9 +252,14 @@ const Contact = () => {
                 <Phone className="w-5 h-5 mr-2" />
                 Call Priority Support
               </Button>
-              <Button variant="outline" size="lg" className="px-12 py-6 text-lg border-white text-white hover:bg-white hover:text-automotive-dark">
-                <MessageSquare className="w-5 h-5 mr-2" />
-                Live Chat Support
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="px-12 py-6 text-lg border-2 border-white/80 bg-white/10 text-white backdrop-blur-sm hover:bg-white hover:text-automotive-dark transition-all duration-300 hover:shadow-xl hover:scale-[1.05] relative overflow-hidden group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <MessageSquare className="w-5 h-5 mr-2 relative z-10" />
+                <span className="relative z-10">Live Chat Support</span>
               </Button>
             </div>
           </div>
