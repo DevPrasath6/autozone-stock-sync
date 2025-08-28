@@ -36,15 +36,15 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              <ShoppingCart className="w-5 h-5 mr-2" />
-              Shop Now
-            </Button>
-            
-            <Button variant="outline-white" size="lg" className="text-lg px-8 py-6">
-              <Search className="w-5 h-5 mr-2" />
-              Check Inventory
-            </Button>
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+                <ShoppingCart className="w-5 h-5 mr-2" />
+                Shop Now
+              </Button>
+              
+              <Button variant="outline-white" size="lg" className="text-lg px-8 py-6">
+                <Search className="w-5 h-5 mr-2" />
+                Check Inventory
+              </Button>
           </div>
 
           {/* Key Features */}

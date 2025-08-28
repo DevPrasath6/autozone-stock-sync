@@ -2,9 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ShoppingCart, Star, CheckCircle } from 'lucide-react';
+import { useCart } from '@/hooks/use-cart';
+import { useToast } from '@/hooks/use-toast';
 import productsImage from '@/assets/products-grid.jpg';
 
 const ProductsGrid = () => {
+  const { addItem } = useCart();
+  const { toast } = useToast();
+  
   const categories = [
     {
       title: 'Seat Covers',
@@ -152,6 +157,26 @@ const ProductsGrid = () => {
     }
   ];
 
+  const handleAddToCart = (category: any) => {
+    // Convert category title to product format
+    const product = {
+      id: category.title.toLowerCase().replace(/\s+/g, '-'),
+      name: category.title,
+      price: parseInt(category.price.replace(/\D/g, '')) || 50,
+      category: category.title,
+      location: 'Available at all locations'
+    };
+    
+    addItem(product);
+  };
+
+  const handleQuickView = (categoryTitle: string) => {
+    toast({
+      title: "Product Category",
+      description: `Viewing ${categoryTitle} products. Full product catalog coming soon!`,
+    });
+  };
+
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -238,9 +263,14 @@ const ProductsGrid = () => {
 
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-primary">{category.price}</span>
-                  <Button variant="outline" size="sm" className="group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="group-hover:bg-primary group-hover:text-primary-foreground"
+                    onClick={() => handleAddToCart(category)}
+                  >
                     <ShoppingCart className="w-4 h-4 mr-2" />
-                    View Products
+                    Add to Cart
                   </Button>
                 </div>
               </CardContent>

@@ -5,6 +5,8 @@ import ProductsGrid from '@/components/ProductsGrid';
 import InventoryShowcase from '@/components/InventoryShowcase';
 import LiveInventoryDashboard from '@/components/LiveInventoryDashboard';
 import LocationsSection from '@/components/LocationsSection';
+import FAQSection from '@/components/FAQSection';
+import QuickStatsBar from '@/components/QuickStatsBar';
 
 const Index = () => {
   return (
@@ -12,10 +14,12 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <QuickStatsBar />
         <InventoryShowcase />
         <LiveInventoryDashboard />
         <ProductsGrid />
         <LocationsSection />
+        <FAQSection />
       </main>
       <Footer />
     </div>

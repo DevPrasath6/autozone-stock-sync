@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Car, Phone } from 'lucide-react';
+import CartDrawer from '@/components/CartDrawer';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +53,7 @@ const Navbar = () => {
 
           {/* Contact Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
+            <CartDrawer />
             <Button variant="accent" size="sm" className="hidden sm:flex">
               <Phone className="w-4 h-4 mr-2" />
               Call Now
